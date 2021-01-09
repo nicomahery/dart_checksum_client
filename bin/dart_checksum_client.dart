@@ -7,7 +7,10 @@ const int TABBED_SPACE_LENGTH = 15;
 const int MAXIMUM_ARGUMENTS_COUNT_ALLOWED = 2;
 const String HELP_PRINT_STRING =
     'A command-line utility to calculate checksum on a file\n\n' +
-    'Usage: dart run dart_checksum_client.dart [<option>] <path>\n';
+    'Usages:\n' +
+    '  -from source: dart run dart_checksum_client.dart [<option>] <path>\n' +
+    '  -from exe: dart_checksum_client.exe [<option>] <path>\n' +
+    '  -from aot(linux, macos): dartaotruntime dart_checksum_client.aot [<option>] <path>\n';
 
 const String HELP_OPTION_COMMAND = '--help';
 const String DIRECTORY_OPTION_COMMAND = '--directory';
