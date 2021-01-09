@@ -32,7 +32,7 @@ void main(List<String> arguments) async {
       print('Please use a supported option');
       exit(128);
     }
-    if (arguments.length < 2) {
+    if (arguments.length < 2 && arguments.first != HELP_OPTION_COMMAND) {
       print('Specify the path, please refer to the help option: $HELP_OPTION_COMMAND');
       exit(128);
     }
